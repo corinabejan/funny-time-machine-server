@@ -15,8 +15,8 @@ module.exports = (sequelize, DataTypes) => {
   fact.init(
     {
       name: DataTypes.STRING,
-      content: DataTypes.STRING,
-      imageUrl: DataTypes.STRING,
+      content: DataTypes.STRING(60000),
+      imageUrl: DataTypes.STRING(60000),
     },
     {
       sequelize,
