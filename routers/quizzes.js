@@ -1,18 +1,18 @@
 const { Router } = require("express");
-const Fact = require("../models").fact;
+const Quiz = require("../models").quiz;
 const Place = require("../models").place;
 const TimePeriod = require("../models").timePeriod;
 const router = new Router();
 
 router.get("/", async (req, res, next) => {
   try {
-    const facts = await Fact.findAll({
+    const quiz = await Quiz.findAll({
       include: [Place, TimePeriod],
     });
-    if (!facts) {
-      res.status(404).send({ message: "Facts not found" });
+    if (!quiz) {
+      res.status(404).send({ message: "Quiz not found!" });
     }
-    res.status(200).send({ message: "Facts found!", facts });
+    res.status(200).send({ message: "Quizzes found!", quiz });
   } catch (e) {
     next(e);
   }
@@ -24,13 +24,13 @@ router.get("/:id", async (req, res, next) => {
     res.status(403).send({ message: "Missing parameters!" });
   }
   try {
-    const facts = await Fact.findByPk(id, {
+    const quiz = await Quiz.findByPk(id, {
       include: [Place, TimePeriod],
     });
-    if (!facts) {
-      res.status(404).send({ message: "Facts not found" });
+    if (!quiz) {
+      res.status(404).send({ message: "Quiz not found!" });
     }
-    res.status(200).send({ message: "Facts found!", facts });
+    res.status(200).send({ message: "Quizzes found!", quiz });
   } catch (e) {
     next(e);
   }
