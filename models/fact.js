@@ -8,8 +8,8 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      fact.hasOne(models.place);
-      fact.hasOne(models.timePeriod);
+      fact.belongsTo(models.place);
+      fact.belongsTo(models.timePeriod);
     }
   }
   fact.init(

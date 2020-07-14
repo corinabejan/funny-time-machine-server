@@ -8,9 +8,9 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      quiz.hasOne(models.place);
-      quiz.hasOne(models.timePeriod);
-      quiz.belongsTo(models.answer);
+      quiz.belongsTo(models.place);
+      quiz.belongsTo(models.timePeriod);
+      quiz.hasOne(models.answer);
     }
   }
   quiz.init(
