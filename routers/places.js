@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const Place = require('../models').place;
+const Place = require("../models").place;
 const router = new Router();
 
 router.get("/", async (req, res, next) => {
@@ -14,5 +14,17 @@ router.get("/", async (req, res, next) => {
   }
 });
 
+router.get("/:id", async (req, res, next) => {
+  const id = req.params.id;
+  try {
+    const places = await Place.findByPk(id);
+    if (!id) {
+      res.status(403).send({ message: "Missing paramaters!" });
+    }
+    res.status(200).send({ message: "The required place was found!", places });
+  } catch (e) {
+    next(e);
+  }
+});
 
 module.exports = router;
