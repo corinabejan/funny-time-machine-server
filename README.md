@@ -4,5 +4,5 @@ This is the backend for the Funny Time Machine app. Here you can find the databa
 
 ## Collaborators
 
-**Hanna Hrydziushka**[https://github.com/AnjaHrydziushka](https://github.com/AnjaHrydziushka)
-**Dmitry Titkov**[https://github.com/Dmitry-Titkov](https://github.com/Dmitry-Titkov)
+- **Hanna Hrydziushka** [https://github.com/AnjaHrydziushka](https://github.com/AnjaHrydziushka)
+- **Dmitry Titkov** [https://github.com/Dmitry-Titkov](https://github.com/Dmitry-Titkov)
