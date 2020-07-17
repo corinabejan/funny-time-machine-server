@@ -372,7 +372,7 @@ module.exports = {
           content:
             "Border Cave is a rock shelter on the western scarp of the Lebombo Mountains in KwaZulu-Natal near the border between South Africa and Swaziland. Border Cave has a remarkably continuous stratigraphic record of occupation spanning about 200 ka. Anatomically modern Homo sapiens skeletons together with stone tools and chipping debris were recovered. Dating by carbon-14, amino acid racemisation and electron spin resonance (ESR) places the oldest sedimentary ash at some 200 kiloannum.",
           imageUrl:
-            "https://lh3.googleusercontent.com/proxy/25_-1ditpGYXZNbZKaNzm8IiD0wVFOVZaEMUc1Vss3nLPp66bBNmTN-ir5WuucJTJMD8MW5qn3S8T3b7zOm85k-XddwwSSLxC35gjbZQwMeVW6-wEwuALzvkKWLb",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQtMn4vJCBXWPGMOZzIm8afDibDQIp_nOzogQ&usqp=CAU",
           placeId: 5,
           timePeriodId: 2,
           createdAt: new Date(),
